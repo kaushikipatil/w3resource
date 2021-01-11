@@ -5,14 +5,8 @@ Sample value of n is 5
 Expected Result : 615
 """
 
-print("Enter the number")
-n=int(input())
-print("Sample value of n is ",n)
-
-addition=int(0)
-multiply=int(0)
-
-for i in range(0,n):
-    addition+=n
-    multiply+=(addition*10)+n
-    print(addition)
+a = int(input("Input an integer : "))
+n1 = int( "%s" % a )
+n2 = int( "%s%s" % (a,a) )
+n3 = int( "%s%s%s" % (a,a,a) )
+print (n1+n2+n3)
